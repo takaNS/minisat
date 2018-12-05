@@ -35,7 +35,7 @@ fi
 # echo "start gcc."
 # gcc -std=c99 ./cleate_cnf.c -o ./cleate_cnf.out
 # echo "complete gcc."
-echo "cleate cnf."
+# echo "cleate cnf."
 ./cleate_cnf.out $QUEENS > ./queenN.cnf
 echo "complete cnf."
 $MINISAT ./queenN.cnf ./solved.txt 2> ./SAT_error.log 1> ./SAT.log
